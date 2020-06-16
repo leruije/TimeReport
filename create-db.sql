@@ -5,7 +5,7 @@
 
 show databases;
 
-drop database timesheet;
+drop database timereport;
 drop user timesheet;
 
 create database timesheet;
