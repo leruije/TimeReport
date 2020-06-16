@@ -7,12 +7,12 @@ import java.util.Scanner;
 
 public class GetTerminalInput {
 	
-	static public String readKey(String name, String msg) throws IOException {
-		System.out.println("\n" + name + " : " + msg + " : Hit enter");
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		String s = br.readLine();
-		return s;
-	}
+//	static public String readKey(String name, String msg) throws IOException {
+//		System.out.println("\n" + name + " : " + msg + " : Hit enter");
+//		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+//		String s = br.readLine();
+//		return s;
+//	}
 	
 	static public String readKey(String msg) throws IOException {
 		System.out.println("\n>"  + msg + " (+ Hit enter)");
@@ -29,28 +29,18 @@ public class GetTerminalInput {
 		return s;
 	}
 	
-	public static int getInput() {
-		Scanner scnr = new Scanner(System.in);
-		int returnValue = 0;
-		System.out.println("> votre choix ... (+ Hit enter)");
-        try {
-			returnValue = scnr.nextInt();
-		} catch (Exception e) {
-			e.printStackTrace();
-			returnValue = 9;
-		}
-		scnr.close();
-        return returnValue;
-	}
-
-//	public static int readKey(String msg) throws IOException {
-//		System.out.println("\n-> " + msg + " (+ Hit enter)");
-//		
-//		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-//		String s = "";
-//		s = br.readLine();
-////		String someString = "123123";
-//		boolean isNumeric = s.chars().allMatch( Character::isDigit );
-//		return s;
+//	public static int getInput() {
+//		Scanner scnr = new Scanner(System.in);
+//		int returnValue = 0;
+//		System.out.println("> votre choix ... (+ Hit enter)");
+//        try {
+//			returnValue = scnr.nextInt();
+//		} catch (Exception e) {
+//			e.printStackTrace();
+//			returnValue = 9;
+//		}
+//		scnr.close();
+//        return returnValue;
 //	}
+
 }
