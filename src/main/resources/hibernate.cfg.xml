@@ -6,7 +6,7 @@
 	<session-factory>
 		<property name="hibernate.dialect">org.hibernate.dialect.MariaDB103Dialect</property>
 		<property name="hibernate.connection.driver_class">org.mariadb.jdbc.Driver</property>
-		<property name="hibernate.connection.url">jdbc:mysql://localhost/timesheet</property>
+		<property name="hibernate.connection.url">jdbc:mysql://localhost/timereport</property>
 		<property name="hibernate.connection.username">timesheet</property>
 		<property name="hibernate.connection.password">timesheet</property>
 <!-- 		<property name="show_sql">true</property> -->
