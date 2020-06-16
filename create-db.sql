@@ -8,7 +8,7 @@ show databases;
 drop database timereport;
 drop user timesheet;
 
-create database timesheet;
+create database timereport;
 create user timesheet;
 GRANT ALL ON *.* TO 'timesheet'@localhost IDENTIFIED BY 'timesheet';
 GRANT ALL ON *.* TO 'timesheet'@'%' IDENTIFIED BY 'timesheet';
