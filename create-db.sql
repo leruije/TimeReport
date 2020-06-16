@@ -6,7 +6,7 @@
 show databases;
 
 drop database timereport;
-drop user timesheet;
+drop user timereport;
 
 create database timereport;
 CREATE USER 'timereport' IDENTIFIED BY 'timereport';
