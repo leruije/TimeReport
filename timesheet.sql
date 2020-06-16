@@ -1,4 +1,4 @@
-use timesheet;
+use timereport;
 
 # Delete table in reverse order to satisfy integrity constraints
 DROP table if exists timesheet ;
