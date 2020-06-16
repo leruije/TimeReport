@@ -90,7 +90,7 @@ public class TimesheetLoader {
 	
 	public  void getTimesheetTerminal(Session session) throws IOException {
 		System.out.println("Introduction d'un timesheet via terminal");
-		String msg = "Introduisez la séquence ssn | acivityId | startDate | endDate | heures" 
+		String msg = "Introduisez la séquence ssn | acivityCode | startDate | endDate | heures" 
 				+ "\navec ssn = numero de securité sociale de l'employé (index, valeur unique) - l'employé doit exister dans la DB"
 				+ "\n     activityCode = code activité de l'activité exécutée (index, valeur unique) - l'activité doit exister dans la DB"
 				+ "\n     startDate (date début prestation) - format yyy-mm-dd (defaut 08:30:00)"
