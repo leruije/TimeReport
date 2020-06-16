@@ -30,7 +30,7 @@ public class MainReport {
 		menu.add("7 - Validation message mqtt UNIQUEMENT APRES RECEPTION mqtt");
 		menu.add("9 - Exit");
 
-		TimesheetLoader dvu = new TimesheetLoader();
+		TimesheetLoader tl = new TimesheetLoader();
 		
 		do {
 			System.out.println();
@@ -45,13 +45,13 @@ public class MainReport {
 			}
 			
 			System.out.println("> votre choix = " + choix);
-			if (choix.equals("1")) dvu.listEmployee(session);
-			if (choix.equals("2")) dvu.listProject(session);
-			if (choix.equals("3")) dvu.listActivity(session);
-			if (choix.equals("4")) dvu.listTimesheet(session);
-			if (choix.equals("5")) dvu.getTimesheetTerminal(session);
-			if (choix.equals("6")) dvu.getTimesheetMqtt(session);
-			if (choix.equals("7")) dvu.readMqttFile(session);
+			if (choix.equals("1")) tl.listEmployee(session);
+			if (choix.equals("2")) tl.listProject(session);
+			if (choix.equals("3")) tl.listActivity(session);
+			if (choix.equals("4")) tl.listTimesheet(session);
+			if (choix.equals("5")) tl.getTimesheetTerminal(session);
+			if (choix.equals("6")) tl.getTimesheetMqtt(session);
+			if (choix.equals("7")) tl.readMqttFile(session);
 			
 			if (choix.equals("9")) {
 				System.out.println("Au revoir!");
