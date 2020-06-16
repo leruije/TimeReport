@@ -8,7 +8,7 @@ import be.promsoc.arlon.util.*;
 public class MainDataLoader {
 
 	public static void main(String[] args) {
-		System.out.println("Database timesheet - Load data set for employee, project, activity, timesheet");
+		System.out.println("Database timereport - Load data set for employee, project, activity, timesheet");
 		
 		SessionFactory sf = HibernateUtil.getSessionFactory();
 		Session session = sf.openSession();
