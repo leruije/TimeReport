@@ -9,11 +9,10 @@ drop database timereport;
 drop user timesheet;
 
 create database timereport;
-create user timesheet;
-GRANT ALL ON *.* TO 'timesheet'@localhost IDENTIFIED BY 'timesheet';
-GRANT ALL ON *.* TO 'timesheet'@'%' IDENTIFIED BY 'timesheet';
-GRANT ALL privileges ON `timereport`.* TO 'timesheet'@localhost;
-flush privileges;
+CREATE USER 'timereport' IDENTIFIED BY 'timereport';
+GRANT USAGE ON *.* TO 'timereport'@localhost IDENTIFIED BY 'timereport';
+GRANT ALL privileges ON `timereport`.* TO 'timereport'@localhost;
+FLUSH PRIVILEGES;
 
 -- Populate the DB
 
