@@ -9,7 +9,7 @@ import org.hibernate.SessionFactory;
 
 import be.promsoc.arlon.util.*;
 
-public class MainTimesheetLoader {
+public class MainReport {
 	
 	private static final String TOPIC_MQTT = "home/be/promsoc/arlon/timesheet";
 	
