@@ -17,6 +17,6 @@ flush privileges;
 
 -- Populate the DB
 
--- mysql -u timesheet -p
+-- mysql -u timereport -p
 -- source timesheet.sql
 
